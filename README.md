@@ -1,4 +1,4 @@
-# Telegram-Channel-Joiner
+# Gram_group_joiner
 
 <img src="https://raw.githubusercontent.com/spmedia/Telegram-Channel-Joiner/main/wizard3.jpg" style="width: 75%; height: 75%" />
 
