@@ -2,29 +2,15 @@
 
 <img src="https://raw.githubusercontent.com/spmedia/Telegram-Channel-Joiner/main/wizard3.jpg" style="width: 75%; height: 75%" />
 
-A python bot 🤖 that uses the [Pyrogram API Framework](https://docs.pyrogram.org/) to take a list of Telegram channels and groups and joins them. I really made this to help people doing CTI and OSINT on Telegram to make growing your sock puppet accounts a lot easier.
+A Python bot utilizing the [Pyrogram API Framework](https://docs.pyrogram.org/) to automate the process of joining a list of Telegram channels and groups. This tool is designed to aid CTI and OSINT practitioners in efficiently managing their sock puppet accounts.
 
-A free Telegram account can be in 500 channels/groups max. A paid Telegram Premium account can be in 1000 channels/groups max.
+### Features:
+- **Account Limits**: Supports both free (500 channels/groups max) and Telegram Premium accounts (1000 channels/groups max).
+- **API Credentials**: Obtain your API ID and hash from [my.telegram.org](https://my.telegram.org/).
+- **Channel/Group List**: Handles lists of Telegram channels and groups.
+- **Private Channels**: To join private channels, modify line 34 and uncomment line 35 in the script.
+- **Rate Limiting**: Implements a random delay (300-600 seconds) between joins to avoid rate limits. 
 
-You will first need to first log into https://my.telegram.org/ and grab your account api id and hash.
-
-This bot takes a list of Telegram channels and groups like:
-
-https://t.me/ButusovPlus
-
-https://t.me/brigade_14
-
-https://t.me/xaron14ombr
-
-etc.
-
-to join private channels, comment line 34 and uncomment line 35
-
-and joins your Telegram account to them.
-
-Dependencies 
+### Installation:
+```sh
 python3 -m pip install pyrogram tgcrypto
-
-I put a random delay in between joins of 300 seconds to 600 seconds just so you aint hitting rate limits and shit. If you try to join too many channels/groups at once it will timeout and make you wait. Slow and steady wins the race 🐢. This is made to just setup and leave it running overnight and you wake up to being in a ton of channels. You can change the rate limit if you want but you'll hit rate limits if you make it too fast. This is like an EZ Bake oven but for lazy CTI nerds like me who like Telegram.
-
-Happy hunting and hacking my fellow CTI wizards 🧙‍♂️ 🎯
